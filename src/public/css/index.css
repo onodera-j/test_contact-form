@@ -1,0 +1,178 @@
+.contactform__content{
+    width: 70%;
+    margin: 0 auto;
+    color: #8b7969;
+    max-width: 1230px;
+    margin-bottom: 50px;
+}
+
+.contactform__content-title{
+    text-align: center;
+    font-size: 35px;
+}
+
+.form__group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.form__group-title {
+    text-align: left;
+    width: 35%;
+}
+
+.form__group-content input,
+.form__group-content select,
+.form__group-content textarea {
+    border: none;
+    background-color: #eee;
+    padding: 10px 10px 10px 30px;
+    color:#8b7969;
+}
+
+.form__label--required{
+    color: #f00;
+}
+
+.form__group-content {
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.form__input--name,
+.form__input--email,
+.form__input--address,
+.form__input--building,
+.form__input--detail {
+    width:100%
+}
+
+.form__input--email input,
+.form__input--address input,
+.form__input--building input,
+.form__input--detail textarea {
+    width: 100%;
+}
+
+.form__input--name input {
+    width: 95%;
+}
+.form__input--name:last-child {
+    text-align: right;
+}
+
+.form__input--gender input{
+    opacity: 0;
+    position: absolute;
+}
+
+.form__input--gender input[type="radio"]+span {
+    display: inline-block;
+    position: relative;
+    padding: 0.3em 0.3em 0.3em 40px;
+    cursor: pointer;
+    border: 1px dotted #fff;
+    margin-right: 3vw;
+}
+
+.form__input--gender input[type=radio]+span::before {
+    content: "";
+    /*一旦空白を置く*/
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #8b7969;
+    background-color: #fff;
+    box-sizing: border-box;
+    top: 5px;
+    left: 10px;
+}
+
+.form__input--gender input[type=radio]:checked+span::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 10px solid #8b7969;
+    top: 5px;
+    left: 10px;
+    box-sizing: border-box;
+}
+
+.form__input--tel input {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+.form__input--item {
+    padding-top: 7px;
+}
+
+
+
+.form__input--content {
+    position: relative;
+    width: 50%
+}
+
+.form__input--content select {
+    width: 100%;
+}
+
+.form__input--content::after {
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    border-right: 12px solid transparent;
+    border-left: 12px solid transparent;
+    border-top: 12px solid #8b7969;
+    border-bottom: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.form__input--content select {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.form__input--content select:invalid {
+    color: rgba(139,121,105,0.5);
+}
+
+::placeholder {
+    color: #8b7969;
+}
+
+.form__group-button {
+    width: 100%;
+    text-align: center;
+}
+
+.form__button {
+    text-align: center;
+}
+
+.form__button-submit{
+
+    background-color: #82756A;
+    padding: 10px 40px;
+    color: #fff;
+    border: none;
+}
+
+.form__error{
+    margin-left:35%;
+    color: #f00;
+}
+
+

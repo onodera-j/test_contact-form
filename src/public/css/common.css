@@ -1,0 +1,47 @@
+
+.inika-regular {
+    font-family: "Inika", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.inika-bold {
+    font-family: "Inika", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+.header__inner{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 0 auto;
+    border-bottom: 1px solid #E0DFDE;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.header__logo{
+    font-size: 60px;
+    color: #8b7969;
+    text-decoration: none;
+
+}
+
+.header__button {
+    position: absolute;
+    right: 30px;
+    top: 50px;
+    width: 100px;
+    color: #d9c6b5;
+    background-color: #f6f6f6;
+    border: 1px solid #d9c6b5;
+    font-size: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+
+
+
