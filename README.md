@@ -3,7 +3,7 @@
 <h2>環境構築</h2><br>
 Dockerビルド<br>
 <ol>
-  <li>git clone </li>
+  <li>git clone git@github.com:onodera-j/test_contact-form.git</li>
   <li>composer install</li>
 </ol>
 ※MySQLは、OSによって起動しない場合があるのでそれぞれのPCに合わせてdocker-compose.ymlファイルを編集してください。
