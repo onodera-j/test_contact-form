@@ -61,6 +61,7 @@
                 </div>
             </div>
             <div class="form__button">
+                {{--login画面に遷移できない--}}
                 <button class="form__button-submit" type="submit">登録</button>
             </div>
         </form>

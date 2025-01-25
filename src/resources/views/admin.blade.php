@@ -2,7 +2,7 @@
 
 @section("css")
 <link rel="stylesheet" href="{{asset("css/admin.css")}}" />
-
+<script src="{{ asset('js/modal.js') }}"></script>
 @endsection
 
 @section("button")
@@ -58,9 +58,9 @@
                 <button class="export-button" type="submit" name="export">エクスポート</button>
             </div>
             <div class="pagination">
-                {{--対応するcssを持っていないためデザイン表示不可
-                    検索結果が反映されなくなる--}}
-                {{$contacts->links("vendor.pagination.semantic-ui")}}
+                {{--デザインが表示できない
+                    検索結果がうまく表示されなくなる
+                {{$contacts->links("vendor.pagination.semantic-ui")}}--}}
             </div>
         </div>
         <div class="contact-table">
@@ -89,28 +89,18 @@
                     <td class="table__text">{{$contact["email"]}}</td>
                     <td class="table__text">{{$contact["category"]["content"]}}</td>
                     <td class="table__text">
-                        <a href="#modal-container{{$contact["id"]}}">詳細</a>
-{{--                        <button class="contact-detail" type="submit">詳細</button> --}}
+                    {{--モーダルウィンドウ作成できていません--}}
+                    <button class="contact-detail" type="submit">詳細</button>
                     </td>
                 </tr>
-{{--
-                <div id="modal-container{{$contact["id"]}}">
-                    <div class="modal">
-                        <div class="modal__header">
-                        <button type="button" class="modai__close" aria-label="閉じる">
-                        </button>
-                        </div>
-                        <div class="modal__content">
-                            <p>名前　{{$contact["first_name"]}}</p>
-                        </div>
-                    </div>
-                </div>
---}}
+
 
                 @endforeach
             </table>
         </div>
+{{--
 
+        {{--モーダルウィンドウ--
         <div id="modal-container">
                     <div class="modal">
                         <div class="modal__close">
@@ -125,7 +115,7 @@
                             </table>
                         </div>
                     </div>
-        </div>
+        </div>--}}
 
     </div>
 

@@ -20,7 +20,7 @@ Route::get('/', [ContactController::class, "index"]);
 Route::post("/confirm", [ContactController::class, "confirm"]);
 Route::post("/thanks", [ContactController::class, "store"]);
 //Route::post("/login", [AdminController::class, "admin"]);
-Route::post("/register", [AdminController::class, "login"]);
+//Route::post("/register", [AdminController::class, "login"]);
 Route::middleware("auth")->group(function(){
     Route::get("/admin", [AdminController::class, "admin"]);
 });

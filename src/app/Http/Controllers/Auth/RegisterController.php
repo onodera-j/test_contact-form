@@ -73,4 +73,10 @@ class RegisterController extends Controller
         ]);
     }
 
+    public function redirectPath()
+    {
+        return 'admin/login';
+    }
+
+
 }

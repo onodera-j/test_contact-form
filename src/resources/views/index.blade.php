@@ -135,7 +135,7 @@
                 </div>
             </div>
 
-            {{-- お問い合わせの種類 リレーション必要そう --}}
+            {{-- お問い合わせの種類 修正からの遷移時にデータ保持できない --}}
             <div class="form__group">
                 <div class="form__group-title">
                     <span class="form__label--item">お問い合わせの種類</span>

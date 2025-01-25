@@ -32,7 +32,7 @@ class AdminController extends Controller
                     ->DateSearch($request->created_at)
                     ->get();
                     //検索結果が反映されない
-                    $contacts = Contact::paginate(7);
+                    //$contacts = Contact::paginate(7);
         $categories = Category::all();
 
         return view("admin", compact("contacts", "categories"));
